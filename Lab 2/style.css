@@ -1,0 +1,84 @@
+*{
+    background-color: antiquewhite;
+}
+a:link{
+    color: rgb(70, 15, 237);
+}
+a:hover{
+    background-color: rgb(254, 169, 169);
+}
+a:visited{
+    color: crimson;
+}
+table{
+    background-color: aqua;
+    border: 5px solid black;
+    padding: 5px;
+}
+th{
+    background-color: blueviolet;
+}
+td{
+    background-color: rgb(194, 166, 220);
+}
+td:hover{
+    color: red;
+    background-color: rgb(237, 242, 105);
+}
+th:hover{
+    background-color: chocolate;
+}
+/* REGISTRATION FORM  */
+form {
+    background-color: white;
+    border: 3px solid black;
+    padding: 15px;
+    margin: 10px;
+}
+input{
+    background-color: rgb(223, 208, 208);
+    border: 3px solid black;
+}
+textarea {
+    background-color: rgb(223, 208, 208);
+    border: 3px solid black;
+}
+
+select {
+    background-color: rgb(223, 208, 208);
+    border: 3px solid black;
+}
+
+button[type="submit"]:hover {
+    background-color:darkblue;
+    color: white;
+}
+button[type="reset"]:hover {
+    background-color:red;
+    color: white;
+}
+button[type="submit"] {
+    background-color: lightgreen;
+}
+
+button[type="reset"] {
+    background-color: lightcoral;
+}
+label {
+    color: darkblue;
+}
+
+h1 {
+    color: darkblue;
+    background-color: lightblue;
+    border: 2px solid black;
+    padding: 10px;
+}
+img {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+h2 {
+    color: darkblue;
+}
