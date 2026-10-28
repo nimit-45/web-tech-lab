@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admission - GCET Jammu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-left">
+            <img src="images/logo.jpg" alt="GCET Logo">
+            <div class="header-titles">
+                <h1>Govt. College of Engineering and Technology, Jammu</h1>
+                <p>(Autonomous College)</p>
+            </div>
+        </div>
+        <a href="studentlogin.html" class="login-btn">Student Login</a>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="students.html">Students</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admission.html">Admission</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <h2 style="color: #1a4d8c; text-align: center;">Student Admission Form</h2>
+        
+        <form action="ThankY.html" method="get" style="max-width: 600px; margin: 0 auto; background: #f9f9f9; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+            <table style="border: none;">
+                <tr style="border: none;">
+                    <td style="border: none;"><b>Full Name:</b></td>
+                    <td style="border: none;"><input type="text" name="fullname" style="width: 100%; padding: 8px;" required></td>
+                </tr>
+                <tr style="border: none;">
+                    <td style="border: none;"><b>Email:</b></td>
+                    <td style="border: none;"><input type="email" name="email" style="width: 100%; padding: 8px;" required></td>
+                </tr>
+                <tr style="border: none;">
+                    <td style="border: none;"><b>Date of Birth:</b></td>
+                    <td style="border: none;"><input type="date" name="dob" style="width: 100%; padding: 8px;" required></td>
+                </tr>
+                <tr style="border: none;">
+                    <td style="border: none;"><b>Gender:</b></td>
+                    <td style="border: none;">
+                        <input type="radio" name="gender" value="Male"> Male &nbsp;
+                        <input type="radio" name="gender" value="Female"> Female
+                    </td>
+                </tr>
+                <tr style="border: none;">
+                    <td style="border: none;"><b>Course:</b></td>
+                    <td style="border: none;">
+                        <select name="course" style="width: 100%; padding: 8px;">
+                            <option value="cse">Computer Science Engineering</option>
+                            <option value="civil">Civil Engineering</option>
+                            <option value="ece">Electronics & Comm.</option>
+                            <option value="me">Mechanical Engineering</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr style="border: none;">
+                    <td style="border: none;"><b>Address:</b></td>
+                    <td style="border: none;"><textarea name="address" rows="3" style="width: 100%; padding: 8px;"></textarea></td>
+                </tr>
+            </table>
+            <div style="text-align: center; margin-top: 20px;">
+                <input type="submit" value="Submit Form" class="login-btn" style="border: none; cursor: pointer;">
+                <input type="reset" value="Clear" style="padding: 10px 20px; cursor: pointer;">
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 GCET Jammu. All Rights Reserved.</p>
+        <p><b>Submitted by: Nimit Sharma</b></p>
+    </div>
+
+</body>
+</html>

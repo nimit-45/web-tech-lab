@@ -1,0 +1,131 @@
+
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f4f6f8; 
+    margin: 0; 
+    padding: 0; 
+    color: #333; 
+}
+
+.header { 
+    background-color: #1a4d8c; 
+    color: white; 
+    padding: 15px 30px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.header-left { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.header-left img { 
+    height: 70px; 
+    background: white; 
+    border-radius: 50%; 
+    padding: 5px; 
+}
+
+.header-titles h1 { 
+    margin: 0; 
+    font-size: 24px; 
+}
+
+.header-titles p { 
+    margin: 5px 0 0 0; 
+    font-size: 14px; 
+    color: #d1e0f2; 
+}
+
+.login-btn { 
+    background-color: #e67e22; 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    border: 2px solid white; 
+}
+
+.login-btn:hover { 
+    background-color: #d35400; 
+}
+
+.nav { 
+    background-color: #333; 
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.nav a { 
+    color: white; 
+    text-decoration: none; 
+    padding: 15px 25px; 
+    font-size: 16px; 
+    transition: 0.3s; 
+}
+
+.nav a:hover { 
+    background-color: #1a4d8c; 
+}
+
+.container { 
+    background-color: white; 
+    max-width: 1000px; 
+    margin: 30px auto; 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    min-height: 400px; 
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+
+table, th, td { 
+    border: 1px solid #ccc; 
+}
+
+th, td { 
+    padding: 12px; 
+    text-align: left; 
+}
+
+th { 
+    background-color: #f2f2f2; 
+}
+
+.gallery-grid { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    justify-content: center; 
+}
+
+.gallery-grid img { 
+    width: 30%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+
+.footer { 
+    background-color: #1a4d8c; 
+    color: white; 
+    text-align: center; 
+    padding: 15px; 
+    margin-top: 30px; 
+}
+
+.footer p { 
+    margin: 5px 0; 
+}
