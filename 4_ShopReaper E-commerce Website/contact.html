@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopReaper | Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-nav">
+    <a href="index.html" class="brand-title">💀⚔️ Shop<span>Reaper</span></a>
+    <nav class="menu-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#categories">Categories</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+    <div class="right-controls">
+      <a href="products.html#wishlist-area" class="cart-btn">Wishlist (<span id="wishlist-count">0</span>)</a>
+      <a href="products.html#cart-area" class="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+      <button id="theme-toggle" class="theme-btn">Dark Mode</button>
+    </div>
+  </header>
+
+  <section class="page-wrap">
+    <h2>Contact Us</h2>
+    <p class="sub-text">Have a question regarding an order or product specification? Send us a message below.</p>
+
+    <div class="contact-grid">
+      <form id="contact-form" class="form-card" novalidate>
+        <div class="field-row">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name">
+        </div>
+
+        <div class="field-row">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="name@example.com">
+        </div>
+
+        <div class="field-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="10-digit mobile number">
+        </div>
+
+        <div class="field-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Order or product enquiry">
+        </div>
+
+        <div class="field-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <p id="form-feedback" class="feedback-text"></p>
+
+        <div class="action-row">
+          <button type="submit" class="primary-btn">Send Message</button>
+          <button type="reset" class="outline-btn">Reset</button>
+        </div>
+      </form>
+
+      <div class="form-card">
+        <h3>Store Information</h3>
+        <p><strong>Address</strong><br>45 Residency Road, Jammu, J&amp;K - 180001</p>
+        <br>
+        <p><strong>Email</strong><br>helpdesk@shopreaper.in</p>
+        <br>
+        <p><strong>Phone</strong><br>+91 94191 12345</p>
+        <br>
+        <p><strong>Customer Support Hours</strong><br>Monday – Saturday, 10:00 AM to 7:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <button id="back-to-top" class="back-to-top" title="Back to Top">↑ Top</button>
+
+  <footer class="site-footer">
+    <div class="footer-cols">
+      <div>
+        <h3>💀⚔️ ShopReaper</h3>
+        <p>Modern online store built for quality electronics, apparel, and daily essentials.</p>
+      </div>
+      <div>
+        <h4>Quick Navigation</h4>
+        <p><a href="index.html">Home</a> · <a href="products.html">Products</a> · <a href="about.html">About Us</a> · <a href="contact.html">Contact Us</a></p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p>
+          <a href="https://facebook.com" target="_blank">Facebook</a> ·
+          <a href="https://instagram.com" target="_blank">Instagram</a> ·
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+        </p>
+      </div>
+    </div>
+    <p class="copy-line">&copy; 2026 ShopReaper. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

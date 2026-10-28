@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopReaper | All Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-nav">
+    <a href="index.html" class="brand-title">💀⚔️ Shop<span>Reaper</span></a>
+    <nav class="menu-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="index.html#categories">Categories</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="right-controls">
+      <a href="#wishlist-area" class="cart-btn">Wishlist (<span id="wishlist-count">0</span>)</a>
+      <a href="#cart-area" class="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+      <button id="theme-toggle" class="theme-btn">Dark Mode</button>
+    </div>
+  </header>
+
+  <div id="toast-msg" class="notice-bar"></div>
+
+  <section class="page-wrap">
+    <h2>All Products</h2>
+
+    <!-- Feature 1 & 2: Search and Category Filter Controls -->
+    <div class="toolbar">
+      <input type="text" id="search-input" placeholder="Search by brand or model (e.g. PUMA, Sony, Keychron)...">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Footwear">Footwear</button>
+        <button class="filter-btn" data-filter="Electronics">Electronics</button>
+        <button class="filter-btn" data-filter="Clothing">Clothing</button>
+        <button class="filter-btn" data-filter="Accessories">Accessories</button>
+      </div>
+    </div>
+
+    <!-- 8 Products Grid -->
+    <div id="products-list" class="item-grid">
+      <div class="item-box" data-category="Footwear">
+        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/309208/01/sv01/fnd/IND/fmt/png/BMW-M-Motorsport-Catch-Sneakers" alt="PUMA BMW M Motorsport Catch Sneakers" data-label="PUMA BMW M Motorsport Catch Sneakers">
+        <div class="item-body">
+          <span class="cat-tag">Footwear</span>
+          <h3>PUMA BMW M Motorsport Catch Sneakers</h3>
+          <p class="cost">₹4,499</p>
+          <p class="short-info">Official BMW M Motorsport low-profile court sneakers in white & team blue.</p>
+        </div>
+        <div class="action-row">
+          <button class="outline-btn view-details-btn"
+            data-name="PUMA BMW M Motorsport Catch Sneakers"
+            data-price="4499"
+            data-img="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/309208/01/sv01/fnd/IND/fmt/png/BMW-M-Motorsport-Catch-Sneakers"
+            data-desc="Inspired by motorsport heritage, the PUMA BMW M Motorsport Catch Sneakers feature a sleek synthetic leather upper, perforated detailing, and a high-grip rubber outsole.">
+            Details
+          </button>
+          <button class="outline-btn wishlist-btn" data-name="PUMA BMW M Motorsport Catch Sneakers" data-price="4499">Wishlist</button>
+          <button class="primary-btn add-to-cart-btn" data-name="PUMA BMW M Motorsport Catch Sneakers" data-price="4499">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="item-box" data-category="Electronics">
+        <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=800&q=85" alt="Sony WH-CH720N Wireless ANC Headphones" data-label="Sony WH-CH720N Wireless ANC Headphones">
+        <div class="item-body">
+          <span class="cat-tag">Electronics</span>
+          <h3>Sony WH-CH720N Wireless ANC Headphones</h3>
+          <p class="cost">₹8,990</p>
+          <p class="short-info">Dual noise sensor technology with Integrated Processor V1 and 35-hr battery.</p>
+        </div>
+        <div class="action-row">
+          <button class="outline-btn view-details-btn"
+            data-name="Sony WH-CH720N Wireless ANC Headphones"
+            data-price="8990"
+            data-img="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=800&q=85"
+            data-desc="Sony's lightest wireless noise-canceling headband ever, featuring multipoint Bluetooth connection, DSEE audio upscaling, and crystal-clear beamforming microphones.">
+            Details
+          </button>
+          <button class="outline-btn wishlist-btn" data-name="Sony WH-CH720N Wireless ANC Headphones" data-price="8990">Wishlist</button>
+          <button class="primary-btn add-to-cart-btn" data-name="Sony WH-CH720N Wireless ANC Headphones" data-price="8990">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="item-box" data-category="Clothing">
+        <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=85" alt="Levi's 501 Original Trucker Denim Jacket" data-label="Levi's 501 Original Trucker Denim Jacket">
+        <div class="item-body">
+          <span class="cat-tag">Clothing</span>
+          <h3>Levi's 501 Original Trucker Denim Jacket</h3>
+          <p class="cost">₹3,799</p>
+          <p class="short-info">Indigo stonewashed heavyweight denim jacket with signature copper shanks.</p>
+        </div>
+        <div class="action-row">
+          <button class="outline-btn view-details-btn"
+            data-name="Levi's 501 Original Trucker Denim Jacket"
+            data-price="3799"
+            data-img="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=85"
+            data-desc="The original jean jacket since 1967. Crafted with durable 100% cotton indigo denim, adjustable waist tabs, and buttoned chest flap pockets.">
+            Details
+          </button>
+          <button class="outline-btn wishlist-btn" data-name="Levi's 501 Original Trucker Denim Jacket" data-price="3799">Wishlist</button>
+          <button class="primary-btn add-to-cart-btn" data-name="Levi's 501 Original Trucker Denim Jacket" data-price="3799">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="item-box" data-category="Accessories">
+        <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=85" alt="Casio Edifice Chronograph EFR-526D" data-label="Casio Edifice Chronograph EFR-526D">
+        <div class="item-body">
+          <span class="cat-tag">Accessories</span>
+          <h3>Casio Edifice Chronograph EFR-526D</h3>
+          <p class="cost">₹7,495</p>
+          <p class="short-info">1/10-second stainless steel motorsport chronograph with 100m water resistance.</p>
+        </div>
+        <div class="action-row">
+          <button class="outline-btn view-details-btn"
+            data-name="Casio Edifice Chronograph EFR-526D"
+            data-price="7495"
+            data-img="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=85"
+            data-desc="Precision Japanese quartz movement housed in a brushed stainless steel case with mineral glass, tachymeter bezel, and luminous hands.">
+            Details
+          </button>
+          <button class="outline-btn wishlist-btn" data-name="Casio Edifice Chronograph EFR-526D" data-price="7495">Wishlist</button>
+          <button class="primary-btn add-to-cart-btn" data-name="Casio Edifice Chronograph EFR-526D" data-price="7495">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="item-box" data-category="Electronics">
+        <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=85" alt="Keychron K2 V2 Hot-Swappable Keyboard" data-label="Keychron K2 V2 Hot-Swappable Keyboard">
+        <div class="item-body">
+          <span class="cat-tag">Electronics</span>
+          <h3>Keychron K2 V2 Hot-Swappable Keyboard</h3>
+          <p class="cost">₹6,899</p>
+          <p class="short-info">75% layout wireless mechanical keyboard with Gateron Brown tactile switches.</p>
+        </div>
+        <div class="action-row">
+          <button class="outline-btn view-details-btn"
+            data-name="Keychron K2 V2 Hot-Swappable Keyboard"
+            data-price="6899"
+            data-img="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=85"
+            data-desc="Connects up to 3 devices via Bluetooth 5.1 or USB Type-C. Built with double-shot keycaps, 4000mAh battery, and Mac/Windows toggle.">
+            Details
+          </button>
+          <button class="outline-btn wishlist-btn" data-name="Keychron K2 V2 Hot-Swappable Keyboard" data-price="6899">Wishlist</button>
+          <button class="primary-btn add-to-cart-btn" data-name="Keychron K2 V2 Hot-Swappable Keyboard" data-price="6899">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="item-box" data-category="Clothing">
+        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=85" alt="PUMA Scuderia Ferrari Race Fleece Hoodie" data-label="PUMA Scuderia Ferrari Race Fleece Hoodie">
+        <div class="item-body">
+          <span class="cat-tag">Clothing</span>
+          <h3>PUMA Scuderia Ferrari Race Fleece Hoodie</h3>
+          <p class="cost">₹3,299</p>
+          <p class="short-info">Heavyweight 320 GSM brushed cotton fleece pullover with ribbed cuffs.</p>
+        </div>
+        <div class="action-row">
+          <button class="outline-btn view-details-btn"
+            data-name="PUMA Scuderia Ferrari Race Fleece Hoodie"
+            data-price="3299"
+            data-img="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=85"
+            data-desc="Track-inspired street hoodie crafted from premium cotton-poly fleece with an adjustable drawcord hood and spacious kangaroo pocket.">
+            Details
+          </button>
+          <button class="outline-btn wishlist-btn" data-name="PUMA Scuderia Ferrari Race Fleece Hoodie" data-price="3299">Wishlist</button>
+          <button class="primary-btn add-to-cart-btn" data-name="PUMA Scuderia Ferrari Race Fleece Hoodie" data-price="3299">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="item-box" data-category="Accessories">
+        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=85" alt="Ray-Ban RB3025 Aviator Classic Polarized" data-label="Ray-Ban RB3025 Aviator Classic Polarized">
+        <div class="item-body">
+          <span class="cat-tag">Accessories</span>
+          <h3>Ray-Ban RB3025 Aviator Classic Polarized</h3>
+          <p class="cost">₹6,190</p>
+          <p class="short-info">G-15 polarized crystal lenses with gunmetal frame and 100% UV400 protection.</p>
+        </div>
+        <div class="action-row">
+          <button class="outline-btn view-details-btn"
+            data-name="Ray-Ban RB3025 Aviator Classic Polarized"
+            data-price="6190"
+            data-img="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=85"
+            data-desc="Timeless teardrop aviator sunglasses engineered with glare-blocking polarized lenses and lightweight metal temples.">
+            Details
+          </button>
+          <button class="outline-btn wishlist-btn" data-name="Ray-Ban RB3025 Aviator Classic Polarized" data-price="6190">Wishlist</button>
+          <button class="primary-btn add-to-cart-btn" data-name="Ray-Ban RB3025 Aviator Classic Polarized" data-price="6190">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="item-box" data-category="Footwear">
+        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=85" alt="Nike Air Force 1 '07 Low Triple White" data-label="Nike Air Force 1 '07 Low Triple White">
+        <div class="item-body">
+          <span class="cat-tag">Footwear</span>
+          <h3>Nike Air Force 1 '07 Low Triple White</h3>
+          <p class="cost">₹7,495</p>
+          <p class="short-info">Crisp stitched leather overlays with encapsulated Nike Air cushioning.</p>
+        </div>
+        <div class="action-row">
+          <button class="outline-btn view-details-btn"
+            data-name="Nike Air Force 1 '07 Low Triple White"
+            data-price="7495"
+            data-img="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=85"
+            data-desc="The street icon featuring durable stitched leather overlays, padded low-cut collar, toe-box perforations, and non-marking rubber pivot circles.">
+            Details
+          </button>
+          <button class="outline-btn wishlist-btn" data-name="Nike Air Force 1 '07 Low Triple White" data-price="7495">Wishlist</button>
+          <button class="primary-btn add-to-cart-btn" data-name="Nike Air Force 1 '07 Low Triple White" data-price="7495">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 8: Wishlist Section -->
+  <section id="wishlist-area" class="page-wrap">
+    <h2>Saved Wishlist</h2>
+    <div class="cart-panel">
+      <ul id="wishlist-items" class="wishlist-list"></ul>
+    </div>
+  </section>
+
+  <!-- Feature 4: Shopping Cart Management (+ / - Quantity, Remove, Total) -->
+  <section id="cart-area" class="page-wrap">
+    <h2>Shopping Cart</h2>
+    <div class="cart-panel">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+      <div class="cart-footer">
+        <p class="grand-total-label">Total Amount: <span>₹<span id="cart-total">0</span></span></p>
+        <button id="clear-cart-btn" class="outline-btn">Clear Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Details Popup -->
+  <div id="product-modal" class="popup-bg">
+    <div class="popup-card">
+      <button id="close-modal-btn" class="popup-x">&times;</button>
+      <img id="modal-img" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/309208/01/sv01/fnd/IND/fmt/png/BMW-M-Motorsport-Catch-Sneakers" alt="Preview">
+      <h3 id="modal-title">Product Name</h3>
+      <p id="modal-price" class="cost">₹0</p>
+      <p id="modal-desc">Details</p>
+      <button id="modal-close-action" class="primary-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Feature 9: Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" title="Back to Top">↑ Top</button>
+
+  <footer class="site-footer">
+    <div class="footer-cols">
+      <div>
+        <h3>💀⚔️ ShopReaper</h3>
+        <p>Curated sneaker, audio, and streetwear destination for authentic gear.</p>
+      </div>
+      <div>
+        <h4>Quick Navigation</h4>
+        <p><a href="index.html">Home</a> · <a href="products.html">Products</a> · <a href="about.html">About Us</a> · <a href="contact.html">Contact Us</a></p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <p>
+          <a href="https://facebook.com" target="_blank">Facebook</a> ·
+          <a href="https://instagram.com" target="_blank">Instagram</a> ·
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+        </p>
+      </div>
+    </div>
+    <p class="copy-line">&copy; 2026 ShopReaper. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
